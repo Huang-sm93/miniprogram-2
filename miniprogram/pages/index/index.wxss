@@ -1,18 +1,73 @@
 /**index.wxss**/
-.ca{
-    order: 0;
-    flex-shrink:1;
-    flex-grow: 0;
-    height: 200rpx;
-    width: 30%;
-    margin: 10rpx 10rpx 10rpx;
-    background-color: blue;
+.indexHead{
+    display: flex;
+    height: 100rpx;
+    width: 100%;
+    flex-wrap:nowrap;
+    /*容器中的项目行的对齐方式*/
+    align-items:center;
+    /*设置项目在主轴方向上对齐方式*/
+    justify-content: center;
+    background-color: rgb(236, 238, 229);
 }
 
-.buttonType1{
-    background-color: green;
+.headTitle{
+    background-color: rgb(245, 48, 48);
+    font-size: 50rpx;
 }
 
-.hover{
-    background-color: gray;
+.searchParaContainer{
+    display: flex;
+    height: 80rpx;
+    width: 100%;
+    /*容器中的项目行的对齐方式*/
+    align-items:center;
+    /*设置项目在主轴方向上对齐方式*/
+    justify-content: flex-start;
+    background-color: rgb(230, 236, 207);
+}
+
+.searchParaType{
+    height: 40rpx;
+    width: 100rpx;
+    margin: 10rpx 20rpx 10rpx;
+    background-color:white;
+}
+
+.searchButtonType{
+    height: 50rpx;
+    width: 50rpx;
+    margin-left: 20rpx;
+    font-size: 20rpx;
+    background-color:white;
+}
+
+.dataBody{
+    display: flex;
+    width: 100%;
+    /*容器中的项目行的对齐方式*/
+    align-items:flex-start;
+    flex-direction: row;
+    /*设置项目在主轴方向上对齐方式*/
+    justify-content: flex-start;
+    background-color: rgb(236, 207, 109);
+}
+
+.rowType{
+    display: flex;
+    height: 80rpx;
+    width: 100%;
+    /*容器中的项目行的对齐方式*/
+    align-items:center;
+    /*设置项目在主轴方向上对齐方式*/
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    background-color: rgb(230, 236, 207);
+}
+
+.numberType{
+    height: 60rpx;
+    width: 40rpx;
+    margin-left: 20rpx;
+    background-color: rgb(164, 207, 224);
 }

@@ -1,7 +1,22 @@
 <!--index.wxml-->
 <view class="container" >
-    <view class="ca" wx:for="{{array}}">
-        <text>{{item}}</text>
+    <view class="indexHead">
+        <text class="headTitle">标题位置</text>
     </view>
-    <button class="buttonType1" hover-class="hover" bindtap="jumpPage" >按条件随机</button>
+    <view class="searchParaContainer">
+        <input class="searchParaType" />
+        <input class="searchParaType" />
+        <input class="searchParaType" />
+        <input class="searchParaType" />
+        <button class="searchButtonType">搜索</button>
+    </view>
+    <view class="dataBody">
+        <view class="rowType" wx:for="{{resList}}" wx:for-item="listItem" wx:for-index="index">
+            <text class="numberType">{{index}}</text>
+            <text class="numberType" wx:for="{{listItem.values}}" wx:for-item="prizeNum">
+            {{prizeNum}}
+            </text>
+            <text style="width: 200rpx;height: 40rpx; background-color: aliceblue;">{{listItem.date}} </text>
+        </view>
+    </view>
 </view>
