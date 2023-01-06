@@ -12,9 +12,9 @@
     </view>
     <view class="dataBody">
         <view class="rowType" wx:for="{{resList}}" wx:for-item="listItem" wx:for-index="index">
-            <text>第{{index}}期</text>
             <text class="numberType" wx:for="{{listItem.values}}" wx:for-item="prizeNum">{{prizeNum}}</text>
             <text style="margin: 20rpx; width: 200rpx;height: 40rpx; background-color: aliceblue;">{{listItem.date}}</text>
+            <text style="margin-left: 20rpx;">{{index}}</text>
         </view>
     </view>
 </view>

@@ -55,19 +55,19 @@
 
 .rowType{
     display: flex;
-    height: 80rpx;
+    height: 60rpx;
     width: 100%;
     /*容器中的项目行的对齐方式*/
     align-items:center;
     /*设置项目在主轴方向上对齐方式*/
     justify-content: flex-start;
-    background-color: rgb(230, 236, 207);
+    background-color: rgb(195, 218, 104);
 }
 
 .numberType{
-    height: 60rpx;
+    height: 40rpx;
     width: 40rpx;
-    margin-left: 20rpx;
-    align-items: center;
+    margin-left: 10rpx;
+    text-align: center;
     background-color: rgb(164, 207, 224);
 }
