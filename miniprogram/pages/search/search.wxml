@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+    <view class='page-body'>
+        <form catchsubmit='formSubmit' catchreset='formReset'>
+            <input name='inputName' placeholder="输入名字"/>
+            <input name='inputSex' placeholder="输入性别"/>
+            <input name='inputAge' placeholder="输入年龄"/>
+            <view class="btn-area">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+        <button style="margin: 30rpx 0" formType="reset">Reset</button>
+      </view>
+        </form>
+    </view>
+    <view wx:if="{{canShow}}">
+        <text>名字:{{userInfo.name}}</text>
+        <text>性别:{{userInfo.sex}}</text>
+        <text>年龄:{{userInfo.age}}</text>
+    </view>
+</view>
