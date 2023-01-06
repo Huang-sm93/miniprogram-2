@@ -47,7 +47,7 @@
     width: 100%;
     /*容器中的项目行的对齐方式*/
     align-items:flex-start;
-    flex-direction: row;
+    flex-direction: column;
     /*设置项目在主轴方向上对齐方式*/
     justify-content: flex-start;
     background-color: rgb(236, 207, 109);
@@ -61,7 +61,6 @@
     align-items:center;
     /*设置项目在主轴方向上对齐方式*/
     justify-content: flex-start;
-    flex-wrap: nowrap;
     background-color: rgb(230, 236, 207);
 }
 
@@ -69,5 +68,6 @@
     height: 60rpx;
     width: 40rpx;
     margin-left: 20rpx;
+    align-items: center;
     background-color: rgb(164, 207, 224);
 }
