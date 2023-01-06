@@ -11,8 +11,8 @@
         <button class="searchButtonType">搜索</button>
     </view>
     <view class="dataBody">
-        <view class="rowType" wx:for="{{resList}}" wx:for-item="listItem" wx:for-index="index">
-            <text class="numberType" wx:for="{{listItem.values}}" wx:for-item="prizeNum">{{prizeNum}}</text>
+        <view class="rowType" wx:for="{{resList}}" wx:for-item="listItem" wx:for-index="index" wx:key="date">
+            <text class="numberType" wx:for="{{listItem.values}}" wx:for-item="prizeNum" wx:key="this">{{prizeNum}}</text>
             <text style="margin: 20rpx; width: 200rpx;height: 40rpx; background-color: aliceblue;">{{listItem.date}}</text>
             <text style="margin-left: 20rpx;">{{index}}</text>
         </view>
